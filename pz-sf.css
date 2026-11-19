@@ -9,25 +9,27 @@ body h1.event-name {
     margin: 0 auto;
 }
 
+/* Card */
+.form-details-wrapper {
+    background-color: #ffffff !important;
+}
+
+/* Field boxes (text inputs, textareas, and dropdowns) */
+.form-details-wrapper .mat-mdc-text-field-wrapper {
+    background-color: #f7f7f8 !important;
+    border: 1px solid #949494 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+/* Hide Material's built-in outline so there's no double border */
+.form-details-wrapper .mdc-notched-outline {
+    display: none !important;
+}
+
+/* Let the inner input show the box color */
 .form-details-wrapper input,
-.form-details-wrapper textarea,
-.form-details-wrapper select {
-    background-color: #f7f7f8 !important;
-    border: 1px solid #949494 !important;
-    border-radius: 8px !important;
-    padding: 10px 12px !important;
-}
-
-.input-field .input-box input, .input-field .input-box textarea {
-    background-color: #f7f7f8 !important;
-    border: 1px solid #949494 !important;
-    border-radius: 8px !important;
-    padding: 10px 12px !important;
-}
-
-.mat-mdc-text-field-wrapper .mdc-text-field .mdc-text-field--outlined .mdc-text-field--no-label {
-    background-color: #f7f7f8 !important;
-    border: 1px solid #949494 !important;
-    border-radius: 8px !important;
-    padding: 10px 12px !important;
+.form-details-wrapper textarea {
+    background: transparent !important;
+    border: none !important;
 }
