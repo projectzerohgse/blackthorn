@@ -10,26 +10,29 @@ body h1.event-name {
 }
 
 /* Card */
-.form-details-wrapper {
-    background-color: #ffffff !important;
+.checkout-card-outer {
+    background: #ffffff !important;
 }
 
-/* Field boxes (text inputs, textareas, and dropdowns) */
-.form-details-wrapper .mat-mdc-text-field-wrapper {
-    background-color: #f7f7f8 !important;
-    border: 1px solid #949494 !important;
-    border-radius: 8px !important;
+/* Text fields + checkbox boxes */
+.form-details-wrapper .input-box,
+.form-details-wrapper .checkbox-wrapper {
+    background: #f7f7f8 !important;
+    border-color: #949494 !important;
     box-shadow: none !important;
 }
 
-/* Hide Material's built-in outline so there's no double border */
+/* Dropdowns */
+.form-details-wrapper .mat-mdc-text-field-wrapper {
+    background: #f7f7f8 !important;
+    border: 1px solid #949494 !important;
+    border-radius: 0.625rem !important;
+}
 .form-details-wrapper .mdc-notched-outline {
     display: none !important;
 }
 
-/* Let the inner input show the box color */
-.form-details-wrapper input,
-.form-details-wrapper textarea {
-    background: transparent !important;
-    border: none !important;
+/* Keep the red border on invalid fields */
+.form-details-wrapper .input-box:has(input.ng-touched.ng-invalid) {
+    border-color: var(--errorColor) !important;
 }
