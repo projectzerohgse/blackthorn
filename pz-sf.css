@@ -8,3 +8,12 @@ body h1.event-name {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.form-details-wrapper input,
+.form-details-wrapper textarea,
+.form-details-wrapper select {
+    background-color: #f7f7f8 !important;
+    border: 1px solid #949494 !important;
+    border-radius: 8px !important;
+    padding: 10px 12px !important;
+}
